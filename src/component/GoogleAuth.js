@@ -28,8 +28,8 @@ class GoogleAuth extends Component {
    }
 
    onSignInClick = () => {
-      this.props.signIn(this.props.currentUser.get().getId());
-   };
+      this.auth.signIn();
+    };
 
    onSignOutClick = () => {
       this.props.signOut();
